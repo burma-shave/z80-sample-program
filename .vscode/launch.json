@@ -17,7 +17,7 @@
             },
             "sjasmplus": [
                 {
-                    "path": "z80-sample-program.sld"
+                    "path": "%%PROJECT_NAME%%.sld"
                 }
             ],
             "history": {
@@ -36,8 +36,8 @@
             },
             "rootFolder": "${workspaceFolder}",
             "topOfStack": "stack_top",
-            //"load": "z80-sample-program.sna",
-            "load": "z80-sample-program.nex",
+            //"load": "%%PROJECT_NAME%%.sna",
+            "load": "%%PROJECT_NAME%%.nex",
             "smallValuesMaximum": 513,
             "tmpDir": ".tmp"
         },
@@ -49,7 +49,7 @@
             "remoteType": "cspect",
             "sjasmplus": [
                 {
-                    "path": "z80-sample-program.sld"
+                    "path": "%%PROJECT_NAME%%.sld"
                 }
             ],
             "history": {
@@ -66,8 +66,8 @@
             },
             "rootFolder": "${workspaceFolder}",
             "topOfStack": "stack_top",
-            //"load": "z80-sample-program.sna",
-            "load": "z80-sample-program.nex",
+            //"load": "%%PROJECT_NAME%%.sna",
+            "load": "%%PROJECT_NAME%%.nex",
             "smallValuesMaximum": 513,
             "tmpDir": ".tmp"
         },
@@ -79,7 +79,7 @@
             "remoteType": "zrcp",
             "sjasmplus": [
                 {
-                    "path": "z80-sample-program.sld"
+                    "path": "%%PROJECT_NAME%%.sld"
                 }
             ],
             "history": {
@@ -97,8 +97,8 @@
             },
             "rootFolder": "${workspaceFolder}",
             "topOfStack": "stack_top",
-            //"load": "z80-sample-program.sna",
-            "load": "z80-sample-program.nex",
+            //"load": "%%PROJECT_NAME%%.sna",
+            "load": "%%PROJECT_NAME%%.nex",
             "smallValuesMaximum": 513,
             "tmpDir": ".tmp"
         },
@@ -110,7 +110,7 @@
             "remoteType": "zxnext",
             "sjasmplus": [
                 {
-                    "path": "z80-sample-program.sld"
+                    "path": "%%PROJECT_NAME%%.sld"
                 }
             ],
             "history": {
@@ -127,30 +127,12 @@
             },
             "rootFolder": "${workspaceFolder}",
             "topOfStack": "stack_top",
-            //"load": "z80-sample-program.sna",
-            "load": "z80-sample-program.nex",
+            //"load": "%%PROJECT_NAME%%.sna",
+            "load": "%%PROJECT_NAME%%.nex",
             "smallValuesMaximum": 513,
             "tmpDir": ".tmp"
         },
 
-        {
-            "type": "dezog",
-            "request": "launch",
-            "name": "Unit Tests",
-            "unitTests": true,
-            "remoteType": "zsim",
-            "disassemblerArgs": {
-                "esxdosRst": true
-            },
-            "sjasmplus": [
-                {
-                    "path": "z80-sample-program.sld",
-                }
-            ],
-            "rootFolder": "${workspaceFolder}",
-            //"load": "z80-sample-program.sna",
-            "load": "z80-sample-program.nex",
-        },
 
     ]
 }

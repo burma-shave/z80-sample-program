@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "sjasmplus",
             "args": [
-                "--sld=z80-sample-program.sld",
+                "--sld=%%PROJECT_NAME%%.sld",
                 "--fullpath",
                 "main.asm"
             ],

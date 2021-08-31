@@ -34,16 +34,8 @@ screen_top: defb    0   ; WPMEMx
 ; Include modules
 ;===========================================================================
     include "utilities.asm"
-    include "fill.asm"
-    include "clearscreen.asm"
 
     include "dezog.asm"
-
-    ; Normally you would assemble the unit tests in a separate target
-    ; in the makefile.
-    ; As this is a very short program and for simplicity the
-    ; unit tests and the main program are assembled in the same binary.
-    include "unit_tests.asm"
 
 
 ;===========================================================================
@@ -61,41 +53,7 @@ main:
     di
     ld sp,stack_top
 
-    ; CLS
-    call clear_screen
-    call clear_backg
-
-    ; Init
-lbl1:
-    ld hl,fill_colors
-    ld (fill_colors_ptr),hl
-    ld de,COLOR_SCREEN
-
-    ; Enable interrupts
-    ;im 1
-    ;ei
-
-main_loop:
-    ; fill line with color
-    ld hl,(fill_colors_ptr)
-    ld a,(hl)
-    call fill_bckg_line
-
-    ; break
-    push de
-    ld de,PAUSE_TIME
-    call pause
-    pop de
-
-    ; Alternatively wait on vertical interrupt
-    ;halt
-
-    ; next line
-    call inc_fill_colors_ptr
-
-    jr main_loop
-
-
+    jr $
 ;===========================================================================
 ; Stack.
 ;===========================================================================
